@@ -1,0 +1,1 @@
+Put your photos in images folder named 1.jpg to 5.jpg.

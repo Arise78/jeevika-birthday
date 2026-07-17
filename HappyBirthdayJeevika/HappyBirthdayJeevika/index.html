@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Jeevika! 🎂💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry Background -->
+    <div class="stars-container" id="starsContainer"></div>
+    
+    <!-- Floating Balloons -->
+    <div class="balloons-container" id="balloonsContainer"></div>
+    
+    <!-- Floating Butterflies/Birds -->
+    <div class="butterflies-container" id="butterfliesContainer"></div>
+    
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+    
+    <!-- Sparkle Trail Canvas -->
+    <canvas id="sparkleCanvas"></canvas>
+    
+    <!-- Music Visualizer -->
+    <div class="visualizer-container" id="visualizer">
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+        <div class="visualizer-bar"></div>
+    </div>
+    
+    <!-- Bouncing Monkey -->
+    <div class="monkey" id="monkey">🐒</div>
+    
+    <!-- Music Control -->
+    <button class="music-toggle" id="musicToggle" title="Play Music">🎵</button>
+    
+    <!-- Main Content -->
+    <div class="main-container">
+        
+        <!-- Section 1: Hero with Teasing -->
+        <section class="hero glass-card" id="heroSection">
+            <h1 class="glitch-text" data-text="Happy Birthday!">Happy Birthday!</h1>
+            <h2 class="friend-name">Jeevika 💜</h2>
+            <p class="hero-subtitle">You're not getting older... You're leveling up! 🎮</p>
+            
+            <!-- Cake on starting page -->
+            <div class="cake-preview" id="cakePreview">
+                <div class="cake-emoji">🎂</div>
+                <p class="cake-hint">A cake is waiting for you... 👀</p>
+            </div>
+            
+            <div class="tease-container">
+                <button class="tease-btn" id="teaseBtn">Click for Birthday Wish 🎂</button>
+                <button class="no-btn" id="noBtn">No</button>
+            </div>
+            <p class="hint-text">Psst... try clicking the No button 😏</p>
+        </section>
+
+        <!-- Section 2: Birthday Message & Photo Slideshow (Hidden initially) -->
+        <section class="message-section glass-card hidden" id="messageSection">
+            <h2 class="section-title">💌 A Birthday Letter for You</h2>
+            
+            <!-- Photo Slideshow -->
+            <div class="photo-slideshow" id="photoSlideshow">
+                <img src="images/1.jpg" class="slideshow-img active" alt="Jeevika 1">
+                <img src="images/2.jpg" class="slideshow-img" alt="Jeevika 2">
+                <img src="images/3.jpg" class="slideshow-img" alt="Jeevika 3">
+                <img src="images/4.jpg" class="slideshow-img" alt="Jeevika 4">
+                <img src="images/5.jpg" class="slideshow-img" alt="Jeevika 5">
+            </div>
+            
+            <!-- Typewriter Message -->
+            <div class="typewriter-letter" id="typewriterLetter"></div>
+            
+            <!-- Roast Button -->
+            <div class="roast-section">
+                <button class="roast-btn" id="roastBtn">🔥 Click for a Roast 🔥</button>
+                <div class="roast-message" id="roastMessage"></div>
+            </div>
+            
+            <!-- Cake Cutting Section -->
+            <div class="cake-section" id="cakeSection">
+                <h3 class="cake-title">🎂 Time to Cut the Cake! 🎂</h3>
+                <div class="cake-container" id="cakeContainer">
+                    <div class="full-cake" id="fullCake">
+                        <div class="cake-layer cake-bottom"></div>
+                        <div class="cake-layer cake-middle"></div>
+                        <div class="cake-layer cake-top"></div>
+                        <div class="cake-frosting"></div>
+                        <div class="cake-candle">🕯️</div>
+                    </div>
+                    <div class="knife" id="knife">🔪</div>
+                </div>
+                <p class="cake-instruction" id="cakeInstruction">👆 Drag the knife to cut the cake!</p>
+                <div class="cake-message hidden" id="cakeMessage">
+                    <h2>🎉 HAPPY BIRTHDAY JEEVU BAKA! 🎉</h2>
+                    <h3>HAPPY 18TH! 💜🦋</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Fireworks Container -->
+    <div class="fireworks-container" id="fireworksContainer"></div>
+    
+    <!-- Floating Hearts Container -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="happy-birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
